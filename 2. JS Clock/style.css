@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+}
+
+.clock {
+	position: absolute;
+	width: 30rem;
+	height: 30rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border: 10px solid black;
+	border-radius: 50%;
+}
+
+.center {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.hand {
+	position: absolute;
+	width: 50%;
+	height: 5px;
+	background-color: black;
+	top: 50%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition: 0.05s;
+}
+
+.second-hand {
+	background-color: red;
+}
+
